@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video and audio embedding</title>
+
+    <style>
+      video {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- boolean attributes do not need to be assigned true or false, the state of existing is true and the state of non-exsistence is false-->
+    <video controls autoplay loop src="videos/ocean.mp4">
+      fallback text: Your browser doesn't suport videos
+    </video>
+    <audio src=""></audio>
+    <!--same boolean attributes as video-->
+  </body>
+</html>
