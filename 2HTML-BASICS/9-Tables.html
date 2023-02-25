@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <!-- define style for both table and td at once, DRY rule (dont repeat urself)-->
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      tfoot {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- use tables for tabular data
+        tr = table row
+        th = header cell, cells in the first row
+        td = table data cell, regular data cells
+        use thead, tbody, tfoot for better search engine optimization-->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mareting</td>
+          <td>Accounting</td>
+        </tr>
+        <tr>
+          <td>$100</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
