@@ -1,0 +1,41 @@
+body {
+    margin: 10px;
+}
+
+p {
+    color: orange;
+}
+
+#products {
+
+}
+
+.product {
+
+}
+
+a[targe = "_blank"] {
+
+}
+
+/* this is fragile as minor changes in the url can render code unusable */
+a[href = "https://google.com"] {
+    color: orange;
+}
+
+/* selects all anchor elements with href including "google" */
+a[href *= "google"] {
+    color: orange;
+}
+
+
+/* selects all anchor elements with href beginning with "https" */
+a[href ^= "https"] {
+    color: orange;
+}
+
+/* possible to contain multiple attributes 
+    in this example, starts with https AND ends with .com*/
+a[href ^= "https"][href $=".com"] {
+    color: orange;
+}

@@ -1,0 +1,58 @@
+body {
+    margin: 10px;
+}
+
+/* pseudo-class are default classes used by browsers */
+article :first-child {
+    font-size: 140%;
+    font-style: italic;
+}
+
+article :first-of-type{
+    font-size: 140%;
+    font-style: italic;
+}
+
+article p:last-of-type {
+    font-weight: bold;
+}
+
+ul li:nth-child(odd) {
+    color:deeppink;
+}
+
+a:visited, a:link{
+    color: dodgerblue;
+}
+
+a:hover, a:focus{
+    color: deeppink;
+}
+
+.first-letter {
+    font-size: 140%;
+    font-weight:bold;
+}
+
+/* OR we can use pseudo-element selectors
+    :: for pseudo elements, used to style a part of an element
+    : for pseudo classes, used to style elements in a particular state*/
+
+p::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+::selection {
+    background-color: pink;
+}
+
+/* pseudo element are not part of inspect html*/
+p::before {
+    content: '...';
+    display: block;
+}

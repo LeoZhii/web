@@ -1,0 +1,33 @@
+body {
+    margin: 10px;
+}
+
+/* with two rules targeting the same element
+the browser will target the more specific rule */
+
+.highlight #products {
+    color: dodgerblue !important;
+}
+
+.highlight {
+    color: deeppink;
+}
+
+
+/* if equal weighing, last change is kept*/
+#products {
+    color: green;
+}
+
+#products {
+    color: brown;
+}
+
+/* on hover, we can see specificity. higher specificity takes prescendence
+first number on left = number of ID selectors
+second number =  number of class/ attribute selectors
+third number on right = number of element selectors 
+
+using the !important keyword overrides as most imporant
+better to use more specifications*/
+

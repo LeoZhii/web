@@ -1,0 +1,16 @@
+
+/* combine two different selectors (descendant selector */
+#products p {
+    color: orange;
+}
+
+/* use > sign to select direct descendants
+    use + sign to select siblings (elements that come directl after
+    use ~ sign to select all elements that come after a given element */
+#products > p {
+    color: grey;
+}
+
+#products + p {
+    color: purple
+}

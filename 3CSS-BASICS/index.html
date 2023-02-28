@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- not scaleable, not seperating concerns-->
+    <style>
+      #first {
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/4-basicSelectors.css" />
+    <link rel="stylesheet" href="css/5-relationalSelectors.css" />
+  </head>
+  <body>
+    <!-- cannot have multiple elements with the same id
+        can have multiple elements with the same class-->
+    <section id="products">
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <article class="product">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <article class="product"></article>
+      <article class="product"></article>
+    </section>
+    <a href="https://google.com/" target="_blank">Google</a>
+
+    <p id="first">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
