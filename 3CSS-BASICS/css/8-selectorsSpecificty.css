@@ -1,9 +1,8 @@
+/* with two rules targeting the same element
+the browser will target the more specific rule */
 body {
     margin: 10px;
 }
-
-/* with two rules targeting the same element
-the browser will target the more specific rule */
 
 .highlight #products {
     color: dodgerblue !important;

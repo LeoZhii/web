@@ -1,0 +1,66 @@
+p {
+    color: dodgerblue;
+    border: 1px solid black;
+}
+
+strong {
+    color: initial;
+    border: inherit;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #e6cd10;
+    /* hsl is used for hue, saturation, lightness. Can play around w diff shades*/
+    background-color: hsl(53,65%,77%);
+    background-color: hsla(53,65%,77%,0.5);
+    background-color: rgb(100,200,100);
+    /* use rgba to change opacity*/
+    background-color: rgba(100,200,100,0.5);
+
+    /* gradients are technically images */
+}
+
+/* linear gradient*/
+.another {
+    width:200px;
+    height: 200px;
+    /* yellow leaves 30% of space*/
+    background: linear-gradient(to bottom right,dodgerblue,yellow 30%,tomato);
+}
+
+.third {
+    width:600px;
+    height: 200px;
+    background: radial-gradient(circle at top left, white, yellow)
+}
+
+/*tbh this is too much work, use cssgradient.io to generate code*/
+/* some browsers don't support gradients, so good practice to have a fallback solid colour*/
+
+.borders {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px dashed royalblue;
+    border-width: 10px,20px,10px; /* trbl, top right bottom left */
+    border-radius: 100%;
+    /* tbh also takes too much time. css-trickts.com/the-shapes-of-css
+    visit the link for more info on shapes ^*/
+}
+
+.shadows {
+    width:200px;
+    height: 200px;
+    background: dodgerblue;
+    /* positive value moves shadow to right, negative to left 
+        third value determines how much soft shadow is*/
+    box-shadow: 10px 10px 30px grey;
+    box-shadow: 0 0 30px grey;
+}
+/* when blending shadows onto a background colour, good choice to use rgba colour*/
+h2 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
