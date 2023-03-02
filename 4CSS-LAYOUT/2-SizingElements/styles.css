@@ -1,0 +1,18 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    /* using border box, the h/w specified in the beginning is applied to the whole box
+     use universial selector * to select all html selectors */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+
+    /* to give span display properties */
+    display: inline-block;
+}
+
+.box::before {
+    content: 'Hello'
+}

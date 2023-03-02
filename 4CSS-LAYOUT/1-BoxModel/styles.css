@@ -1,0 +1,4 @@
+p {
+    padding: 20px; /* trbl, if two values then it becomes verical/horizontal */
+    margin: 0px; /* margins next to each other get collapsed into each other, padding does not*/
+}
