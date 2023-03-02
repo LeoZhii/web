@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+}
+
+
+/* 1. Create a Table */
+table, td {
+     border-top: 1px solid #c4dcf3;
+     border-bottom: 1px solid #c4dcf3;;
+     border-collapse: collapse;
+     border-left: 0;
+     border-right: 0;
+}
+
+thead, tfoot {
+    background-color: #427fef;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eef7ff;
+}
+
+td, th {
+    padding: 10px;
+}
+
+tfoot, thead{
+    text-align: left;
+  }
+/* 2.  Create a Box */
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+    border-radius: 10px;
+    box-shadow:10px 10px lightgrey;
+}
