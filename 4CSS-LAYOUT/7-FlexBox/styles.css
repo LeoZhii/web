@@ -1,0 +1,31 @@
+.container{
+    border: 3px solid lightgrey;
+    /* flex makes it easier to align items in the centre of a webpage */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    /* items that cannot fit in one line move to another line */
+    flex-wrap: wrap; 
+    /* align content aligns multiple lines or content as a whole */
+    align-content: center;
+
+}
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+    /* for sizing items, we can also use flex */
+    flex-basis: 10rem;
+    flex-grow: 1;
+    /* flex: grow, shrink, flex basis */
+
+}
+
+.box-one {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+

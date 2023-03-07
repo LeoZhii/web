@@ -1,0 +1,15 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    /* 50% of the width of parent element (body) */
+    width: 50%;
+    height: 10rem;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+p {
+    
+}
